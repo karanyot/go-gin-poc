@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/karanyot/go-gin-poc/routes"
+	// "github.com/karanyot/go-gin-poc/routers"
 
 	"github.com/Depado/ginprom"
 	"github.com/fvbock/endless"
@@ -24,7 +24,7 @@ func main() {
 		})
 	})
 
-	router := routes.TodoV1Router()
+	// router := routers.TodoV1Router()
 
 	endless.ListenAndServe(":4242", router)
 }
